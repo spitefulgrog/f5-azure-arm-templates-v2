@@ -1,12 +1,12 @@
 {
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
-  "contentVersion": "2.5.0.0",
+  "contentVersion": "main",
   "parameters": {
     "allowUsageAnalytics": {
       "value": true
     },
     "artifactLocation": {
-      "value": "f5-azure-arm-templates-v2/v2.5.0.0/examples/"
+      "value": "f5-azure-arm-templates-v2/main/examples/"
     },
     "bigIpExternalSelfIp01": {
       "value": "10.0.1.11"
@@ -19,6 +19,9 @@
     },
     "bigIpExternalVip01": {
       "value": "10.0.1.101"
+    },
+    "bigIpInternalVip01": {
+      "value": "10.100.16.101"
     },
     "bigIpHostname01": {
       "value": "failover01.local"
@@ -81,16 +84,16 @@
       "value": "bigip_high_availability_solution"
     },
     "provisionPublicIpMgmt": {
-      "value": false
+      "value": true
     },
     "provisionServicePublicIp": {
-      "value": false
+      "value": true
     },
     "restrictedSrcAddressApp": {
-      "value": ""
+      "value": "*"
     },
     "restrictedSrcAddressMgmt": {
-      "value": ""
+      "value": "*"
     },
     "sshKey": {
       "value": ""
