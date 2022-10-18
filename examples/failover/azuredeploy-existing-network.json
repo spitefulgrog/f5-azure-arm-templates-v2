@@ -612,7 +612,7 @@
             "value": "[parameters('bigIpInternalSelfIp02')]"
           },
           "nic2ServiceIPs": {
-            "value": "[if(variables('provisionServiceLocalIp'), createArray(createObject('publicIpId', reference('dagTemplate').outputs.externalIpIds.value[2], 'privateIpAddress', parameters('bigIpInternalVip01'))), createArray(createObject('publicIpId', '', 'privateIpAddress', parameters('bigIpInternalVip01')))), createArray())]"
+            "value": "[if(variables('provisionServiceLocalIp'), createArray())]"
           },
           "roleDefinitionId": {
             "value": ""
