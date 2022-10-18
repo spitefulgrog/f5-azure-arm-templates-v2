@@ -148,13 +148,6 @@
       },
       "type": "string"
     },
-    "bigIpInternalVip01": {
-      "defaultValue": "10.100.16.101",
-      "metadata": {
-        "description": "Internal private VIP Address for BIGIP Instance. IP address parameter must be in the form x.x.x.x. The address must reside in the same subnet and address space as the IP address provided for bigIpInternalSelfIp01."
-      },
-      "type": "string"
-    },
     "bigIpInternalSelfIp01": {
       "defaultValue": "10.0.2.11",
       "metadata": {
@@ -166,6 +159,13 @@
       "defaultValue": "10.0.2.12",
       "metadata": {
         "description": "Internal Private IP Address for BIGIP Instance 02. IP address parameter must be in the form x.x.x.x."
+      },
+      "type": "string"
+    },
+    "bigIpInternalVip01": {
+      "defaultValue": "10.100.16.101",
+      "metadata": {
+        "description": "Internal private VIP Address for BIGIP Instance. IP address parameter must be in the form x.x.x.x. The address must reside in the same subnet and address space as the IP address provided for bigIpInternalSelfIp01."
       },
       "type": "string"
     },
