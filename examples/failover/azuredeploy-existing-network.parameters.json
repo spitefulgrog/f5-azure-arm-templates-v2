@@ -89,6 +89,9 @@
     "provisionServicePublicIp": {
       "value": true
     },
+    "provisionServiceLocalPIPIp": {
+      "value": false
+    },
     "restrictedSrcAddressApp": {
       "value": "*"
     },
