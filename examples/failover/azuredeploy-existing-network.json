@@ -619,7 +619,7 @@
             "value": "[parameters('bigIpInternalSelfIp02')]"
           },
           "nic2ServiceIPs": {
-            "value": 
+            "value": "[if(variables('provisionServiceLocalIp'), createArray(createObject('publicIpId', '', 'privateIpAddress', parameters('bigIpExternalVip01'))), createArray())]"
           },
           "roleDefinitionId": {
             "value": ""
