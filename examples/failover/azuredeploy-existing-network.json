@@ -84,13 +84,20 @@
       "type": "string"
     },
     "provisionPublicIpMgmt": {
-      "defaultValue": false,
+      "defaultValue": true,
       "metadata": {
         "description": "Select true if you would like to provision a public IP address for accessing the BIG-IP instance(s)."
       },
       "type": "bool"
     },
     "provisionServicePublicIp": {
+      "defaultValue": true,
+      "metadata": {
+        "description": "Flag to deploy public IP address resource for application."
+      },
+      "type": "bool"
+    },
+    "provisionServiceLocalPIPIp": {
       "defaultValue": false,
       "metadata": {
         "description": "Flag to deploy public IP address resource for application."
